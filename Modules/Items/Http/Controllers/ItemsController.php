@@ -34,7 +34,6 @@ class ItemsController extends Controller
 
     public function updateitem(AddItemRequest $req, $id)
     {
-        dd($id);
         $item = $req->validated();
         $data = ([
             'name' => $item['name'],

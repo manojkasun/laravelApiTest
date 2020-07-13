@@ -18,4 +18,4 @@ Route::middleware('auth:api')->get('/items', function (Request $request) {
 });*/
 Route::get('/items', 'ItemsController@view');
 Route::post('/additem', 'ItemsController@addItem');
-Route::put('/updateitem', 'ItemController@updateitem');
+Route::put('/updateitem/{id}', 'ItemsController@updateitem');
